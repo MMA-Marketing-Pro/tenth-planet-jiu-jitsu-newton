@@ -604,18 +604,29 @@ body::before {
   height: 100%;
   object-fit: cover;
   object-position: center;
-  filter: grayscale(0.1) contrast(1.08) brightness(1.05);
+  filter: contrast(1.08) brightness(0.78) saturate(0.95);
   display: block;
 }
+/* Layer 1 — base darkening across the whole photo */
+.hero-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: rgba(10, 10, 11, 0.45);
+  z-index: 1;
+}
+/* Layer 2 — directional scrim: heavy on the left (text zone), lighter on the right (photo breathes) */
 .hero-bg::after {
   content: '';
   position: absolute;
   inset: 0;
   pointer-events: none;
+  z-index: 1;
   background:
-    radial-gradient(ellipse 55% 55% at 22% 62%, rgba(0, 0, 0, 0.55), transparent 70%),
-    linear-gradient(90deg, rgba(10, 10, 11, 0.7) 0%, rgba(10, 10, 11, 0.35) 40%, rgba(10, 10, 11, 0.05) 70%, rgba(10, 10, 11, 0.2) 100%),
-    linear-gradient(180deg, rgba(10, 10, 11, 0.25) 0%, rgba(10, 10, 11, 0) 18%, rgba(10, 10, 11, 0) 62%, rgba(10, 10, 11, 0.95) 100%);
+    radial-gradient(ellipse 60% 70% at 22% 62%, rgba(0, 0, 0, 0.7), transparent 72%),
+    linear-gradient(90deg, rgba(10, 10, 11, 0.9) 0%, rgba(10, 10, 11, 0.72) 28%, rgba(10, 10, 11, 0.35) 58%, rgba(10, 10, 11, 0.15) 80%, rgba(10, 10, 11, 0.35) 100%),
+    linear-gradient(180deg, rgba(10, 10, 11, 0.55) 0%, rgba(10, 10, 11, 0.15) 22%, rgba(10, 10, 11, 0.15) 60%, rgba(10, 10, 11, 0.98) 100%);
 }
 /* Hero content must stack above the bg + scrim */
 .hero .container { position: relative; z-index: 2; }
