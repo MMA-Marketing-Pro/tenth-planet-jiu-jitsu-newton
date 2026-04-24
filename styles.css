@@ -591,28 +591,34 @@ body::before {
   padding-top: calc(var(--nav-h) + 24px);
   padding-bottom: clamp(64px, 10vw, 120px);
   overflow: hidden;
+  background: var(--bg);
 }
 .hero-bg {
   position: absolute;
   inset: 0;
-  z-index: -1;
+  z-index: 0;
+  overflow: hidden;
 }
 .hero-bg img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
-  filter: grayscale(0.25) contrast(1.18) brightness(0.8) sepia(0.05);
+  filter: grayscale(0.1) contrast(1.08) brightness(1.05);
+  display: block;
 }
 .hero-bg::after {
   content: '';
   position: absolute;
   inset: 0;
+  pointer-events: none;
   background:
-    radial-gradient(ellipse 60% 70% at 22% 68%, rgba(0, 0, 0, 0.65), transparent 70%),
-    linear-gradient(90deg, rgba(10, 10, 11, 0.88) 0%, rgba(10, 10, 11, 0.62) 35%, rgba(10, 10, 11, 0.2) 65%, rgba(10, 10, 11, 0.45) 100%),
-    linear-gradient(180deg, rgba(10, 10, 11, 0.4) 0%, rgba(10, 10, 11, 0) 22%, rgba(10, 10, 11, 0) 55%, rgba(10, 10, 11, 0.98) 100%);
+    radial-gradient(ellipse 55% 55% at 22% 62%, rgba(0, 0, 0, 0.55), transparent 70%),
+    linear-gradient(90deg, rgba(10, 10, 11, 0.7) 0%, rgba(10, 10, 11, 0.35) 40%, rgba(10, 10, 11, 0.05) 70%, rgba(10, 10, 11, 0.2) 100%),
+    linear-gradient(180deg, rgba(10, 10, 11, 0.25) 0%, rgba(10, 10, 11, 0) 18%, rgba(10, 10, 11, 0) 62%, rgba(10, 10, 11, 0.95) 100%);
 }
+/* Hero content must stack above the bg + scrim */
+.hero .container { position: relative; z-index: 2; }
 
 /* Subtle flame streak + ice arc overlays */
 .hero-bg::before {
