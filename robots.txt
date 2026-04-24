@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /booking.html
+
+Sitemap: https://tenthplanetnewton.com/sitemap.xml

@@ -1,0 +1,8 @@
+_*.mjs
+_gen.mjs
+_seo.mjs
+_realswap.mjs
+scrape-*.json
+pages.json
+.DS_Store
+node_modules/

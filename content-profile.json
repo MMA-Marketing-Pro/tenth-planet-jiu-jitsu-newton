@@ -1,0 +1,225 @@
+{
+  "name": "Tenth Planet Jiu Jitsu Newton",
+  "slug": "tenth-planet-jiu-jitsu-newton",
+  "website": "https://martialwaymma.com",
+  "businessType": "10th Planet Jiu-Jitsu academy / MMA gym",
+  "tagline": "Your path to a better life",
+  "legacyBrandName": "Martial Way MMA",
+  "primaryBrandName": "10th Planet Jiu-Jitsu Newton",
+  "siteStructure": {
+    "totalPages": 11,
+    "isSinglePage": false,
+    "pages": [
+      {
+        "url": "https://martialwaymma.com/",
+        "label": "Home",
+        "slug": "index",
+        "type": "homepage",
+        "screenshotPath": "sites/tenth-planet-jiu-jitsu-newton/screenshot-before.png"
+      },
+      {
+        "url": "https://martialwaymma.com/about-us",
+        "label": "About",
+        "slug": "about",
+        "type": "about"
+      },
+      {
+        "url": "https://martialwaymma.com/martial-arts-classes",
+        "label": "Programs",
+        "slug": "programs",
+        "type": "services"
+      },
+      {
+        "url": "https://martialwaymma.com/martial-arts-classes/10th-planet-jiu-jitsu",
+        "label": "10th Planet Jiu-Jitsu",
+        "slug": "jiu-jitsu",
+        "type": "program-detail"
+      },
+      {
+        "url": "https://martialwaymma.com/martial-arts-classes/mixed-martial-arts",
+        "label": "Mixed Martial Arts",
+        "slug": "mma",
+        "type": "program-detail"
+      },
+      {
+        "url": "https://martialwaymma.com/martial-arts-classes/muay-thai-kickboxing",
+        "label": "Muay Thai / Kickboxing",
+        "slug": "muay-thai",
+        "type": "program-detail"
+      },
+      {
+        "url": "https://martialwaymma.com/martial-arts-classes/kids-10p-jiu-jitsu-and-kickboxing",
+        "label": "Kids Program",
+        "slug": "kids",
+        "type": "program-detail"
+      },
+      {
+        "url": "https://martialwaymma.com/schedule",
+        "label": "Schedule",
+        "slug": "schedule",
+        "type": "schedule"
+      },
+      {
+        "url": "https://martialwaymma.com/gallery",
+        "label": "Gallery",
+        "slug": "gallery",
+        "type": "gallery"
+      },
+      {
+        "url": "https://martialwaymma.com/faq",
+        "label": "FAQ",
+        "slug": "faq",
+        "type": "faq"
+      },
+      {
+        "url": "https://martialwaymma.com/contact-us",
+        "label": "Contact",
+        "slug": "contact",
+        "type": "contact"
+      }
+    ]
+  },
+  "pageContent": {
+    "home": {
+      "heroHeadline": "Train Jiu-Jitsu in Newton, NJ",
+      "heroSubtext": "10th Planet Jiu-Jitsu Newton is a full-service martial arts academy offering 10P Jiu-Jitsu, MMA, Muay Thai / Kickboxing, and a dedicated kids program in Sussex County.",
+      "heroCTA": "Book A Free Class",
+      "programs": [
+        {"name": "10th Planet Jiu-Jitsu", "hook": "The no-gi system Eddie Bravo built."},
+        {"name": "Mixed Martial Arts", "hook": "Strike, clinch, grapple — one complete fighter."},
+        {"name": "Muay Thai / Kickboxing", "hook": "The art of eight limbs: fists, elbows, knees, shins."},
+        {"name": "Kids 10P Jiu-Jitsu & Kickboxing", "hook": "Confidence, focus, and discipline in every class."}
+      ],
+      "valueProps": [
+        "Official 10th Planet affiliate",
+        "Kids + adult programs under one roof",
+        "Beginner-friendly, no sparring required",
+        "Family-run Newton/Augusta NJ academy"
+      ],
+      "testimonials": [
+        {"name": "Anthony Guzman", "quote": "I can't say enough good things about this place — bring the family, you will all love this place long time!", "source": "Google"},
+        {"name": "C Storms", "quote": "Really fun and cool.", "source": "Google"},
+        {"name": "Jill Gendelman", "quote": "The staff is very friendly and helpful and nice.", "source": "Google"}
+      ]
+    },
+    "about": {
+      "heading": "Your path to a better life",
+      "bodyText": "When the people of Newton come to 10th Planet Jiu-Jitsu Newton, they don't just receive training — they get a staff that's dedicated to helping them improve themselves. Learning a martial art can be memorizing moves, but we focus on teaching our students much more. Martial arts is, in some respects, a way of life. It's the practice of mindfulness — when you drill a strike, throw, or submission, the goal is to understand your body and be one with the movement. Over time, you learn how to find that center when you need it most, so the stresses in your life become much more manageable.",
+      "philosophy": "Martial arts instruction in Newton — our instructors are expertly trained martial artists and experienced teachers. No matter what level a person has achieved, there's always more knowledge to gain and techniques to refine. We continuously educate ourselves in our traditions and pay keen attention to how each student learns, so we can make small adjustments quickly to facilitate real progress."
+    },
+    "programs": {
+      "heading": "Classes in Newton, NJ",
+      "intro": "Four distinct programs, one academy. Train with us whether you're a total beginner, a hobbyist, or a competitor.",
+      "serviceList": [
+        {"name": "10th Planet Jiu-Jitsu", "description": "The no-gi grappling system developed by Eddie Bravo after his 2003 ADCC submission of Royler Gracie. Technical, creative, and designed for real-world grappling — not just tournaments.", "audience": "Adults, all levels"},
+        {"name": "Mixed Martial Arts", "description": "MMA merges striking and grappling into a single complete art. Learn boxing, kickboxing, wrestling, and jiu-jitsu in one program — the most complete self-defense system on earth.", "audience": "Adults, all levels"},
+        {"name": "Muay Thai / Kickboxing", "description": "The art of eight limbs. Master fists, elbows, knees, and shins in Thailand's national martial art — a devastating striking system with roots in ancient Muay Boran.", "audience": "Adults, all levels"},
+        {"name": "Kids 10P Jiu-Jitsu & Kickboxing", "description": "Children burn energy, build confidence, and learn discipline in a structured, age-appropriate class. Non-violent, supervised, and adapted to each child's athletic level.", "audience": "Kids (ages 5+)"}
+      ]
+    },
+    "jiuJitsu": {
+      "heading": "10th Planet Jiu-Jitsu in Newton",
+      "whatIs": "Jiu-jitsu is a martial art which uses the opponent's own strength against them rather than pitting one's strength directly against the adversary. The main focus is not striking — it's grappling your opponent into submission.",
+      "history": "After his submission victory over Royler Gracie at the 2003 ADCC World Championships, Eddie Bravo began transitioning away from traditional jiu-jitsu into a modern no-gi system built around creative guards, unorthodox submissions, and real-world effectiveness. That system became 10th Planet Jiu-Jitsu.",
+      "benefits": "10P Jiu-Jitsu develops technical problem-solving under pressure, full-body conditioning, mental resilience, and an elite level of self-defense — whether you ever compete or not."
+    },
+    "mma": {
+      "heading": "Mixed Martial Arts Classes in Newton",
+      "whatIs": "Traditional martial arts are often divided into strike-based fighting (karate, Muay Thai, boxing) and grappling (jiu-jitsu, sambo, wrestling). Mixed Martial Arts was created to merge these archetypes into a single art form so you're never caught at a disadvantage.",
+      "whyLearn": "MMA gives you the knowledge to handle almost any situation. Boxing and kickboxing teach you how to strike, block, dodge, and perform standing clinches. If you're brought to the ground, jiu-jitsu and wrestling give you the tools to defend, sweep, and submit.",
+      "note": "Competing is optional. Most MMA students train for fitness, self-defense, and the challenge — not for fight cards."
+    },
+    "muayThai": {
+      "heading": "Muay Thai / Kickboxing in Newton",
+      "whatIs": "Muay Thai originated in Thailand from the older martial art of Muay Boran (\"ancient boxing\"). The main precept of Muay Thai is mastering the eight striking points of the body — fists, elbows, knees, and shins/feet — which is why it's often called 'the art of eight limbs.'",
+      "vsKickboxing": "Kickboxing and Muay Thai are two different martial arts. Kickboxing as a contact sport was developed from karate, Muay Thai, taekwondo, and Western boxing in the 1960s–70s. Both are incredibly effective for fitness and self-defense.",
+      "whyTrain": "Muay Thai is one of the most complete striking systems in the world. You'll build elite cardio, learn to generate power from the ground up, and develop the kind of conditioning that transfers to every physical challenge in your life."
+    },
+    "kids": {
+      "heading": "Martial Arts Classes for Kids in Newton",
+      "whatIs": "Children need activity to use their energy and grow up healthy and strong — but learning a martial art is so much more than exercise. It starts them on a lifelong path of enjoying physical fitness, building confidence, and learning how to solve problems calmly.",
+      "approach": "We organize our kids classes around the idea that different children learn in different ways. We use a variety of teaching techniques so every child makes real progress — no matter their personality or athletic background.",
+      "safety": "Sparring is never required. All exercises are closely supervised and age-appropriate. Our program emphasizes peaceful resolution and self-confidence over aggression."
+    },
+    "schedule": {
+      "heading": "Class Schedule",
+      "season": "Fall/Winter Schedule",
+      "classes": [
+        {"day": "Monday", "time": "6:30–8:00 PM", "class": "Wrestling Practice"},
+        {"day": "Tuesday", "time": "6:00–7:00 AM", "class": "10th Planet Jiu-Jitsu — All Levels"},
+        {"day": "Tuesday", "time": "5:00–6:00 PM", "class": "Kids 10th Planet Jiu-Jitsu"},
+        {"day": "Tuesday", "time": "6:00–7:00 PM", "class": "Advanced Class (Invite Only)"},
+        {"day": "Tuesday", "time": "7:00–9:00 PM", "class": "10th Planet Jiu-Jitsu — All Levels"},
+        {"day": "Wednesday", "time": "5:30–6:30 PM", "class": "Kids Fitness & 10th Planet Jiu-Jitsu"},
+        {"day": "Wednesday", "time": "6:30–8:00 PM", "class": "10th Planet Jiu-Jitsu — All Levels"},
+        {"day": "Wednesday", "time": "8:15–9:15 PM", "class": "Open Gym"},
+        {"day": "Thursday", "time": "5:00–6:00 PM", "class": "Kids 10th Planet Jiu-Jitsu"},
+        {"day": "Thursday", "time": "6:00–7:00 PM", "class": "Advanced Kids & Teens Jiu-Jitsu"},
+        {"day": "Thursday", "time": "7:00–9:00 PM", "class": "10th Planet Jiu-Jitsu — All Levels"},
+        {"day": "Friday", "time": "8:15–9:15 PM", "class": "10th Planet Jiu-Jitsu — All Levels"},
+        {"day": "Saturday", "time": "10:00–11:30 AM", "class": "10th Planet Jiu-Jitsu — All Levels"},
+        {"day": "Saturday", "time": "11:30 AM–2:00 PM", "class": "Open Gym"},
+        {"day": "Sunday", "time": "10:00 AM–12:00 PM", "class": "Competition Class"},
+        {"day": "Sunday", "time": "6:00–7:00 PM", "class": "Women's 10th Planet Jiu-Jitsu"}
+      ]
+    },
+    "gallery": {
+      "heading": "Inside The Academy",
+      "description": "Training, promotions, open mats, and the people who make 10th Planet Newton what it is.",
+      "imageCount": 12
+    },
+    "faq": {
+      "heading": "Frequently Asked Questions",
+      "items": [
+        {"q": "Will martial arts make my child violent?", "a": "No. Martial arts is used as a last resort. A core principle of our academy is solving problems through peaceful resolution and building self-confidence that eliminates the need for violent behavior."},
+        {"q": "My child isn't very athletic. Can they still benefit?", "a": "Certainly. We teach skills that improve coordination, flexibility, and strength, and we make sure activities are appropriate for each child's athletic level."},
+        {"q": "Will my child be injured in martial arts?", "a": "There's a chance of injury with any form of exercise. We supervise every drill closely to make sure students perform movements correctly. Sparring only occurs at higher levels, and only for students who choose to participate."},
+        {"q": "How fit do I have to be to take an adult class?", "a": "We have people of almost every fitness level train with us. Your current fitness isn't the factor — we meet you where you are and help you improve."},
+        {"q": "I have a past injury or medical condition. Can I still train?", "a": "You'll want to talk to your doctor about the risks of rigorous exercise with your specific condition. They'll know best what your body can safely handle."},
+        {"q": "What should I wear for my first class?", "a": "A top and pants that are comfortable and easy to move in. We'll take care of the rest."}
+      ]
+    },
+    "contact": {
+      "heading": "Contact The Academy",
+      "phone": "(973) 600-3569",
+      "secondaryPhone": "(862) 258-8528",
+      "email": "10pjjnewton@gmail.com",
+      "secondaryEmail": "martialwaymma@gmail.com",
+      "address": "17 US-206, Unit 1, Augusta, NJ 07822",
+      "city": "Newton/Augusta, NJ (Sussex County)",
+      "businessHours": [
+        {"day": "Monday", "hours": "6:00 PM – 9:30 PM"},
+        {"day": "Tuesday", "hours": "6:00–7:00 AM & 5:00–9:30 PM"},
+        {"day": "Wednesday", "hours": "6:00 PM – 9:30 PM"},
+        {"day": "Thursday", "hours": "5:00 PM – 9:30 PM"},
+        {"day": "Friday", "hours": "5:00 PM – 9:30 PM"},
+        {"day": "Saturday", "hours": "10:00 AM – 2:30 PM"},
+        {"day": "Sunday", "hours": "10:00 AM – 12:00 PM"}
+      ]
+    }
+  },
+  "socialMedia": {
+    "instagram": "https://www.instagram.com/10pnewton",
+    "facebook": "https://www.facebook.com/martialwaymma/"
+  },
+  "brandColors": ["#AD0707", "#FF0000", "#000000", "#252525", "#FFFFFF"],
+  "brandColorRoles": {
+    "primary": "#AD0707",
+    "secondary": "#000000",
+    "background": "#0A0A0A",
+    "accent": "#FF0000",
+    "textDark": "#0A0A0A",
+    "textLight": "#FFFFFF"
+  },
+  "brandNote": "10th Planet global branding uses black + red with a distinctive planetary/galaxy visual mark. Existing Martial Way MMA site uses the same red/black palette. The rebrand should lean into the official 10P Newton identity (IG: @10pnewton) rather than the legacy Martial Way branding.",
+  "logoUrl": "https://martialwaymma.com/wp-content/uploads/sites/884/2018/10/LOGO.png",
+  "existingImages": {
+    "logo": {"found": true, "url": "https://martialwaymma.com/wp-content/uploads/sites/884/2018/10/LOGO.png", "format": "PNG", "note": "Current logo is the legacy Martial Way MMA logo. A real 10th Planet Newton logo should be used if available."},
+    "team": [],
+    "gallery": {"count": 8, "appearsReal": true, "note": "Instagram embed shows active content from @10pnewton"},
+    "facility": {"count": 1, "description": "One hero shot visible in current site; more real facility photos should be collected from the client"}
+  },
+  "designRecommendation": "cinematic-fight-skill",
+  "designRationale": "10th Planet is an elite, globally-recognized no-gi jiu-jitsu brand with a distinct moody/dark visual identity (black + red, planetary logo, creative naming conventions like 'Rubber Guard' and 'Twister'). A competition-class program runs on Sunday. The cinematic-fight-skill (obsidian + oxblood, oversized portraits, film grain, prestige-TV documentary feel) matches the 10th Planet aesthetic better than performance-athletic — which would feel too 'general gym' for a real affiliate. The red/black existing palette is already compatible with cinematic-fight.",
+  "currentSiteIssues": "Stuck in 2010-era WordPress/LinkNow template — gray placeholder photo blocks on homepage, cramped footer with duplicate info columns, no clear hierarchy, no real brand expression, no real CTA anywhere (phone numbers scattered, no trial offer), legacy 'Martial Way MMA' branding competing with 10th Planet identity, no mobile-first design, testimonials buried under logo, fake Google badge graphic instead of real review schema, AudioEye overlay feels cluttered, outdated contact form, no schedule visibility above the fold, no class booking path."
+}

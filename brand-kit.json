@@ -1,0 +1,129 @@
+{
+  "name": "Tenth Planet Jiu Jitsu Newton",
+  "slug": "tenth-planet-jiu-jitsu-newton",
+  "logoSource": "/Users/jeremyhenderson/Downloads/ChatGPT Image Apr 23, 2026, 09_11_35 PM.png",
+  "logoDescription": "Official 10th Planet globe mark — flame/amber on the left hemisphere, electric cyan on the right — with gold 'PLANET' wordmark (red letter outlines), white 'JIU JITSU', and royal blue 'NEWTON' containing a red crescent. Fire-vs-ice duality.",
+
+  "designStyle": "cinematic-fight-skill (fire/ice variant)",
+  "designStyleNote": "Base structure from cinematic-fight (obsidian substrate, oversized display type, prestige-TV feel) BUT swap the classic oxblood accent for the logo's fire-orange + ice-cyan dual accent system. Use warm off-white body copy for legibility. Colors are used sparingly — as moments, not wallpaper.",
+
+  "palette": {
+    "substrate": {
+      "obsidian": "#0A0A0B",
+      "carbon": "#141418",
+      "steel": "#1C1C21",
+      "graphite": "#2A2A31",
+      "ash": "#3A3A42"
+    },
+    "ink": {
+      "bone": "#EFE8DC",
+      "parchment": "#D8D2C4",
+      "fog": "#9C958A",
+      "dim": "#6E6860"
+    },
+    "accents": {
+      "flame": "#FF6A14",
+      "emberDeep": "#C13806",
+      "gold": "#F5B015",
+      "ice": "#1BA8E8",
+      "iceDeep": "#0D7AAE",
+      "royal": "#1F3AA8",
+      "crimson": "#B82418"
+    }
+  },
+
+  "colorRoles": {
+    "pageBackground": "#0A0A0B",
+    "sectionBackgroundAlt": "#141418",
+    "cardBackground": "#1C1C21",
+    "borderSubtle": "#2A2A31",
+    "borderStrong": "#3A3A42",
+
+    "headingPrimary": "#EFE8DC",
+    "bodyText": "#D8D2C4",
+    "mutedText": "#9C958A",
+
+    "primaryAccent": "#FF6A14",
+    "primaryAccentHover": "#FF8A3C",
+    "primaryAccentText": "#0A0A0B",
+
+    "secondaryAccent": "#1BA8E8",
+    "secondaryAccentHover": "#3DBDF3",
+
+    "tertiaryAccent": "#F5B015",
+    "dangerCrimson": "#B82418",
+
+    "ctaButtonBg": "#FF6A14",
+    "ctaButtonText": "#0A0A0B",
+    "ctaButtonHoverBg": "#FF8A3C",
+
+    "linkOnDark": "#1BA8E8",
+    "linkHoverOnDark": "#3DBDF3"
+  },
+
+  "usageRules": [
+    "Default substrate is near-black (#0A0A0B). 90%+ of every page should be this plus the carbon/steel tints — NOT wall-to-wall orange or cyan.",
+    "Flame orange (#FF6A14) is the PRIMARY action color — CTAs, hero emphasis word, underline on hover, the one thing the eye chases. Never use it as a section background.",
+    "Ice cyan (#1BA8E8) is the SECONDARY accent — used sparingly for links, highlight moments, and one cold counterpoint per section. Think opposite-corner balance with flame.",
+    "Gold (#F5B015) is reserved for the one-of-a-kind moments — logo-adjacent treatments, premium callouts, champion/competition class badges. Under 5% of any page.",
+    "Fire + ice may appear in the same composition (hero gradient, program cards, divider glyphs) but should never fight for the same eye-path. Spatially separate them.",
+    "NEVER use red (#B82418) and flame orange together in close proximity — the logo already balances them for you. Use red only for rare danger/crimson moments or a single letter-outline tribute.",
+    "Body text is warm bone (#D8D2C4), NOT pure white. Pure white feels clinical against this brand.",
+    "Gradients allowed: flame → ember (warm), ice → royal (cold), or a diagonal flame-to-ice for ONE hero-scale moment per site.",
+    "Film grain and subtle noise overlays are encouraged on hero/full-bleed sections — keeps the cinematic-fight feel without relying on saturation."
+  ],
+
+  "typography": {
+    "displayFont": {
+      "family": "'Anton', 'Oswald', 'Archivo Black', sans-serif",
+      "usage": "Oversized hero headlines, section intros, program names — condensed/compressed display look that echoes fight-poster type",
+      "weight": "400 (Anton is single-weight)",
+      "tracking": "Tight — letterSpacing: -0.02em at 72px+, 0 at 24px",
+      "transform": "UPPERCASE for display, Title Case for subheads"
+    },
+    "bodyFont": {
+      "family": "'Inter', 'Neue Haas Grotesk', system-ui, sans-serif",
+      "usage": "All body copy, paragraphs, nav, forms, meta",
+      "weights": "400 regular, 500 medium, 600 semibold, 700 bold",
+      "tracking": "0 for body, +0.04em for small caps and eyebrows"
+    },
+    "accentFont": {
+      "family": "'Big Shoulders Display', 'Anton'",
+      "usage": "Stat blocks, big numbers, weight classes, round timers — mechanical display type"
+    },
+    "hierarchy": {
+      "hero": "96–128px Anton, line-height 0.95",
+      "h1": "64–88px Anton",
+      "h2": "40–56px Anton",
+      "h3": "24–32px Inter 700",
+      "body": "16–18px Inter 400, line-height 1.6",
+      "eyebrow": "12–13px Inter 600 UPPERCASE, letter-spacing 0.12em"
+    }
+  },
+
+  "spacing": {
+    "grid": "8px base",
+    "sectionPaddingDesktop": "clamp(96px, 12vh, 160px) 0",
+    "sectionPaddingMobile": "64px 0",
+    "containerMaxWidth": "1280px",
+    "gutter": "24px mobile, 48px desktop"
+  },
+
+  "visualLanguage": {
+    "motifs": [
+      "The globe — spherical divider motif, circular crop on portraits, orbit-path lines between program cards",
+      "Flame streaks — diagonal gradient washes from #FF6A14 → transparent on hero edges",
+      "Electric arcs — thin cyan lines as section dividers (1px solid #1BA8E8 at 30% opacity)",
+      "Film grain — 3–5% noise overlay on dark backgrounds",
+      "Oversized portraits — instructors and training shots cropped close, desaturated to -15%, with a subtle flame gradient overlay on one edge"
+    ],
+    "animations": [
+      "Slow glow pulse on the flame accent (2–3s ease-in-out)",
+      "Mouse-parallax on hero globe imagery (8–12px max shift)",
+      "Text reveal on scroll — display type masks up from below, 400ms cubic-bezier(0.22, 1, 0.36, 1)",
+      "Hover on program cards: image desaturates → fully saturates + flame underline draws"
+    ]
+  },
+
+  "colorRestraint": "Per the user's explicit note: do NOT use strong colors site-wide. The flame, ice, and gold accents together should occupy less than ~8% of any page's total pixel real estate. The dark substrate and bone body text carry the weight. Think Netflix-original title sequence, not neon Vegas casino."
+}

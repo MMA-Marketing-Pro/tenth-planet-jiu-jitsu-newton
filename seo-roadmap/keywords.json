@@ -1,0 +1,126 @@
+{
+  "business": {
+    "name": "10th Planet Jiu-Jitsu Newton",
+    "slug": "tenth-planet-jiu-jitsu-newton",
+    "primaryCity": "Newton, NJ",
+    "actualAddress": "17 US-206 Unit 1, Augusta, NJ 07822",
+    "servedCounty": "Sussex County, NJ",
+    "state": "New Jersey",
+    "secondaryMarkets": ["Morris County, NJ", "Warren County, NJ", "Pike County, PA (border)", "Orange County, NY (Port Jervis border)"]
+  },
+  "neighborhoods": {
+    "tier1_sussex_core": [
+      "Newton, NJ",
+      "Augusta, NJ",
+      "Branchville, NJ",
+      "Sparta, NJ",
+      "Franklin, NJ",
+      "Hamburg, NJ",
+      "Vernon, NJ",
+      "Hopatcong, NJ"
+    ],
+    "tier2_sussex_extended": [
+      "Andover, NJ",
+      "Stanhope, NJ",
+      "Byram, NJ",
+      "Sussex, NJ (borough)",
+      "Wantage, NJ",
+      "Stillwater, NJ",
+      "Fredon, NJ",
+      "Lafayette, NJ",
+      "Hampton, NJ",
+      "Frankford Township, NJ",
+      "Green Township, NJ",
+      "Hardyston, NJ"
+    ],
+    "tier3_border": [
+      "Milford, PA",
+      "Port Jervis, NY",
+      "Matamoras, PA",
+      "Blairstown, NJ",
+      "Hackettstown, NJ"
+    ],
+    "assumption_flag": "Neighborhood/town list should be validated with client — actual student origin data (Google Business Profile insights, intake form data) would refine priority. The above is derived from geographic proximity within a ~25 minute drive radius of 17 US-206 Augusta NJ."
+  },
+  "services": [
+    { "id": "jiu-jitsu", "name": "10th Planet Jiu-Jitsu", "variants": ["no-gi jiu-jitsu", "no gi jiu jitsu", "BJJ", "brazilian jiu-jitsu", "10th planet"] },
+    { "id": "mma", "name": "Mixed Martial Arts", "variants": ["MMA", "mixed martial arts", "cage fighting training"] },
+    { "id": "muay-thai", "name": "Muay Thai / Kickboxing", "variants": ["muay thai", "kickboxing", "thai boxing", "striking classes"] },
+    { "id": "kids", "name": "Kids Martial Arts", "variants": ["kids jiu-jitsu", "kids BJJ", "kids kickboxing", "children martial arts", "youth martial arts"] },
+    { "id": "womens", "name": "Women's Jiu-Jitsu", "variants": ["women's BJJ", "women's self defense", "ladies jiu-jitsu"] },
+    { "id": "competition", "name": "Competition / Fight Team", "variants": ["BJJ competition", "tournament training", "IBJJF prep"] },
+    { "id": "self-defense", "name": "Self-Defense", "variants": ["self defense classes", "practical self defense", "street self defense"] },
+    { "id": "wrestling", "name": "Wrestling", "variants": ["adult wrestling", "wrestling for MMA"] }
+  ],
+  "personas": [
+    { "id": "beginners", "label": "Beginners", "intent": "First-time martial arts students with no experience" },
+    { "id": "over-40", "label": "Adults Over 40", "intent": "Masters-division hobbyists, fitness-focused older adults" },
+    { "id": "women", "label": "Women", "intent": "Women seeking women-led classes or women-only sessions" },
+    { "id": "kids-5-8", "label": "Kids Ages 5-8", "intent": "Parents of young children" },
+    { "id": "kids-9-13", "label": "Kids Ages 9-13", "intent": "Parents of pre-teens and teens" },
+    { "id": "competitors", "label": "Competitors", "intent": "Experienced grapplers prepping for tournaments" },
+    { "id": "cross-train", "label": "Cross-Training Athletes", "intent": "Wrestlers, judokas, boxers looking to add grappling" },
+    { "id": "weight-loss", "label": "Weight Loss / Fitness", "intent": "Adults using martial arts for fitness transformation" }
+  ],
+  "curation_topics": [
+    "Best BJJ gym in Newton NJ",
+    "Best kids martial arts in Sussex County NJ",
+    "Best 10th Planet affiliate in New Jersey",
+    "Best no-gi BJJ in North Jersey",
+    "Best MMA gym in Sussex County",
+    "Best Muay Thai in Newton NJ"
+  ],
+  "glossary_topics": [
+    "What is 10th Planet Jiu-Jitsu",
+    "What is no-gi jiu-jitsu",
+    "What is rubber guard",
+    "What is lockdown (jiu-jitsu)",
+    "What is the twister submission",
+    "What is Muay Thai",
+    "What is the art of 8 limbs",
+    "What is an MMA gym",
+    "What to wear to your first jiu-jitsu class",
+    "Jiu-jitsu belt ranks explained",
+    "How long to get a blue belt in BJJ",
+    "What is open mat",
+    "What is a gi vs rashguard",
+    "What is a submission in jiu-jitsu",
+    "IBJJF rules explained"
+  ],
+  "comparisons": [
+    "10th Planet Jiu-Jitsu vs traditional BJJ",
+    "Jiu-jitsu vs wrestling",
+    "Jiu-jitsu vs Krav Maga",
+    "BJJ vs judo",
+    "Muay Thai vs boxing",
+    "Muay Thai vs kickboxing",
+    "MMA vs traditional martial arts",
+    "No-gi vs gi jiu-jitsu"
+  ],
+  "matrix_targets": {
+    "locations_service": { "services_count": 5, "neighborhoods_count": 18, "potential_pages": 90 },
+    "service_persona": { "services_count": 5, "personas_count": 6, "potential_pages": 30 },
+    "curation": { "count": 6 },
+    "glossary": { "count": 15 },
+    "comparisons": { "count": 8 },
+    "examples_tutorials": { "count": 12 },
+    "total_target_6_months": 161
+  },
+  "url_patterns": {
+    "location_pages": "/locations/{neighborhood-slug}/",
+    "location_service_pages": "/locations/{neighborhood-slug}/{service-slug}/",
+    "persona_pages": "/{service-slug}-for-{persona-slug}/",
+    "curation": "/best-{thing}-{city-slug}/",
+    "glossary": "/learn/{term-slug}/",
+    "comparisons": "/compare/{a}-vs-{b}/",
+    "tutorials": "/learn/{topic-slug}/"
+  },
+  "schema_strategy": {
+    "location_pages": ["LocalBusiness", "BreadcrumbList", "Service"],
+    "persona_pages": ["Service", "BreadcrumbList", "FAQPage"],
+    "curation": ["ItemList", "BreadcrumbList"],
+    "glossary": ["Article", "BreadcrumbList", "DefinedTerm"],
+    "comparisons": ["Article", "BreadcrumbList"],
+    "tutorials": ["HowTo", "BreadcrumbList", "VideoObject_if_video"]
+  }
+}
