@@ -78,13 +78,15 @@
     var backdrop = modal.querySelector('.lead-modal__backdrop');
     var form = modal.querySelector('.lead-form');
 
+    var formOpenedAt = 0;
     var openModal = function (e) {
       if (e) e.preventDefault();
       modal.classList.add('open');
       document.body.style.overflow = 'hidden';
-      // focus first field
+      formOpenedAt = Date.now();
+      // focus first visible field (skip honeypot)
       setTimeout(function () {
-        var first = modal.querySelector('input, select');
+        var first = modal.querySelector('input:not([name="website"]), select');
         if (first) first.focus();
       }, 250);
     };
@@ -132,6 +134,14 @@
           data[f.name] = f.value.trim();
         });
         if (!valid) return;
+
+        // Bot protection: honeypot field + minimum-time check.
+        // Real users see the lead modal, fill in 5+ fields, and tick consent — that takes
+        // well over 2 seconds. Bots fill instantly and often auto-fill every visible input
+        // including off-screen ones. Drop silently so the bot thinks it succeeded.
+        if (data.website) return;
+        if (formOpenedAt && Date.now() - formOpenedAt < 2000) return;
+        delete data.website;
 
         try { sessionStorage.setItem('leadFormData', JSON.stringify(data)); } catch (err) {}
 

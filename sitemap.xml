@@ -21,16 +21,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://tenthplanetnewton.com/mma.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://tenthplanetnewton.com/muay-thai.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://tenthplanetnewton.com/kids.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -54,5 +44,15 @@
     <loc>https://tenthplanetnewton.com/contact.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://tenthplanetnewton.com/privacy.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://tenthplanetnewton.com/terms.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>
