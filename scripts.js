@@ -70,6 +70,26 @@
     });
   }
 
+  /* ---------- GHL Lead Webhooks ----------
+     Each program selection fires every URL in its array in parallel.
+     A2 is shared between Adult and Women's, so submissions for either
+     program land in the right GHL workflow. Order within an array is
+     irrelevant — all fire at the same instant via fetch + keepalive. */
+  var LEAD_WEBHOOKS = {
+    'jiu-jitsu': [
+      'https://services.leadconnectorhq.com/hooks/fTid0XDAD0QUPweprHQT/webhook-trigger/6da3906b-5170-47f6-98cb-0aee08376938',
+      'https://services.leadconnectorhq.com/hooks/fTid0XDAD0QUPweprHQT/webhook-trigger/3c5fe007-1dee-4cef-b0fe-fbcf21637053'
+    ],
+    'womens': [
+      'https://services.leadconnectorhq.com/hooks/fTid0XDAD0QUPweprHQT/webhook-trigger/3c5fe007-1dee-4cef-b0fe-fbcf21637053',
+      'https://services.leadconnectorhq.com/hooks/fTid0XDAD0QUPweprHQT/webhook-trigger/7b6d75bd-7f86-4802-b689-a8d71406d43b'
+    ],
+    'kids': [
+      'https://services.leadconnectorhq.com/hooks/fTid0XDAD0QUPweprHQT/webhook-trigger/208e9a8e-beb4-467b-b0ac-1706886b8cca',
+      'https://services.leadconnectorhq.com/hooks/fTid0XDAD0QUPweprHQT/webhook-trigger/e12f049e-6c06-428a-aab0-70bf9b1fcca0'
+    ]
+  };
+
   /* ---------- 6. Lead modal ---------- */
   var modal = document.getElementById('leadModal');
   if (modal) {
@@ -145,8 +165,24 @@
 
         try { sessionStorage.setItem('leadFormData', JSON.stringify(data)); } catch (err) {}
 
-        // TODO: wire to GHL form or webhook here if backend capture is desired.
         var programId = data.program || 'jiu-jitsu';
+
+        // Fire all GHL webhooks for this program in parallel. keepalive: true
+        // ensures requests survive the redirect to booking.html below. We don't
+        // await the responses — fire-and-forget so a slow GHL endpoint can't
+        // stall the user's path to the booking calendar.
+        var hooks = LEAD_WEBHOOKS[programId] || [];
+        hooks.forEach(function (url) {
+          try {
+            fetch(url, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(data),
+              keepalive: true
+            }).catch(function () { /* ignore — fire-and-forget */ });
+          } catch (err) { /* ignore */ }
+        });
+
         window.location.href = 'booking.html?program=' + encodeURIComponent(programId);
       });
     }
