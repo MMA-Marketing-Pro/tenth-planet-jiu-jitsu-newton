@@ -1067,6 +1067,120 @@ body::before {
   }
 }
 
+/* JJ program hero — fire/ice dual-glow treatment, brand colors as moments */
+.page-header--jj .page-header-bg img[data-real="1"] {
+  filter: contrast(1.28) brightness(0.48) saturate(0.55) hue-rotate(-12deg) sepia(0.06) !important;
+}
+.page-header--jj .page-header-bg::after {
+  background:
+    radial-gradient(ellipse 65% 80% at 0% 45%, rgba(255, 106, 20, 0.34), transparent 62%),
+    radial-gradient(ellipse 60% 75% at 100% 55%, rgba(27, 168, 232, 0.30), transparent 62%),
+    radial-gradient(ellipse 80% 100% at 50% 100%, rgba(0, 0, 0, 0.7), transparent 70%),
+    linear-gradient(180deg, rgba(10, 10, 11, 0.55) 0%, rgba(10, 10, 11, 0.25) 40%, rgba(10, 10, 11, 0.95) 100%);
+}
+.page-header--jj .page-header-crumb .current { color: var(--ice); }
+.page-header--jj h1 {
+  text-shadow:
+    -1px 0 20px rgba(255, 106, 20, 0.6),
+    1px 0 20px rgba(27, 168, 232, 0.6),
+    0 0 56px rgba(255, 106, 20, 0.28),
+    0 0 90px rgba(27, 168, 232, 0.24),
+    0 2px 22px rgba(0, 0, 0, 0.6);
+}
+.page-header--jj h1 .accent-flame {
+  color: var(--flame);
+  text-shadow:
+    0 0 14px rgba(255, 106, 20, 0.85),
+    0 0 32px rgba(255, 106, 20, 0.45),
+    0 0 60px rgba(255, 106, 20, 0.25);
+}
+.page-header--jj .page-header-lead {
+  text-shadow:
+    0 0 22px rgba(27, 168, 232, 0.18),
+    0 1px 18px rgba(0, 0, 0, 0.65);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .page-header--jj h1 {
+    animation: jjAuraPulse 6.5s var(--ease-in-out) infinite;
+  }
+}
+@keyframes jjAuraPulse {
+  0%, 100% {
+    text-shadow:
+      -1px 0 20px rgba(255, 106, 20, 0.55),
+      1px 0 20px rgba(27, 168, 232, 0.55),
+      0 0 52px rgba(255, 106, 20, 0.25),
+      0 0 86px rgba(27, 168, 232, 0.22),
+      0 2px 22px rgba(0, 0, 0, 0.6);
+  }
+  50% {
+    text-shadow:
+      -1px 0 26px rgba(255, 106, 20, 0.78),
+      1px 0 26px rgba(27, 168, 232, 0.74),
+      0 0 72px rgba(255, 106, 20, 0.42),
+      0 0 110px rgba(27, 168, 232, 0.34),
+      0 2px 22px rgba(0, 0, 0, 0.6);
+  }
+}
+
+/* Kids program hero — image-free, dual-light stage backdrop with verbiage halo */
+.page-header--kids .page-header-bg {
+  background:
+    radial-gradient(ellipse 75% 60% at 18% 20%, rgba(255, 106, 20, 0.42), transparent 65%),
+    radial-gradient(ellipse 70% 65% at 82% 28%, rgba(27, 168, 232, 0.45), transparent 65%),
+    radial-gradient(ellipse 90% 50% at 50% 105%, rgba(31, 58, 168, 0.32), transparent 65%),
+    linear-gradient(135deg, #0A0A0B 0%, #1C1C21 50%, #0A0A0B 100%);
+}
+.page-header--kids .page-header-bg::after {
+  background:
+    radial-gradient(ellipse 110% 110% at 50% 50%, transparent 55%, rgba(10, 10, 11, 0.78) 100%),
+    linear-gradient(180deg, rgba(10, 10, 11, 0.35) 0%, transparent 30%, rgba(10, 10, 11, 0.85) 100%);
+}
+.page-header--kids .container {
+  position: relative;
+  isolation: isolate;
+}
+.page-header--kids .container::before {
+  content: '';
+  position: absolute;
+  inset: -8% -6%;
+  background:
+    radial-gradient(ellipse 55% 60% at 28% 45%, rgba(255, 106, 20, 0.34), transparent 65%),
+    radial-gradient(ellipse 55% 60% at 72% 55%, rgba(27, 168, 232, 0.36), transparent 65%);
+  filter: blur(36px);
+  z-index: -1;
+  pointer-events: none;
+}
+.page-header--kids .page-header-crumb .current { color: var(--ice); }
+.page-header--kids h1 {
+  text-shadow:
+    -1px 0 20px rgba(255, 106, 20, 0.55),
+    1px 0 20px rgba(27, 168, 232, 0.6),
+    0 0 56px rgba(255, 106, 20, 0.22),
+    0 0 90px rgba(27, 168, 232, 0.28),
+    0 2px 22px rgba(0, 0, 0, 0.55);
+}
+.page-header--kids h1 .accent-ice {
+  text-shadow:
+    0 0 14px rgba(27, 168, 232, 0.85),
+    0 0 32px rgba(27, 168, 232, 0.45),
+    0 0 60px rgba(27, 168, 232, 0.25);
+}
+.page-header--kids .page-header-lead {
+  text-shadow:
+    0 0 22px rgba(27, 168, 232, 0.16),
+    0 1px 18px rgba(0, 0, 0, 0.6);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .page-header--kids .container::before {
+    animation: kidsHaloDrift 9s var(--ease-in-out) infinite;
+  }
+}
+@keyframes kidsHaloDrift {
+  0%, 100% { transform: translate(0, 0) scale(1); opacity: 0.95; }
+  50%      { transform: translate(2%, -1%) scale(1.04); opacity: 1; }
+}
+
 .page-header-crumb {
   font-size: 12px;
   font-weight: 600;
