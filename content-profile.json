@@ -114,7 +114,7 @@
         {"name": "10th Planet Jiu-Jitsu", "description": "The no-gi grappling system developed by Eddie Bravo after his 2003 ADCC submission of Royler Gracie. Technical, creative, and designed for real-world grappling — not just tournaments.", "audience": "Adults, all levels"},
         {"name": "Mixed Martial Arts", "description": "MMA merges striking and grappling into a single complete art. Learn boxing, kickboxing, wrestling, and jiu-jitsu in one program — the most complete self-defense system on earth.", "audience": "Adults, all levels"},
         {"name": "Muay Thai / Kickboxing", "description": "The art of eight limbs. Master fists, elbows, knees, and shins in Thailand's national martial art — a devastating striking system with roots in ancient Muay Boran.", "audience": "Adults, all levels"},
-        {"name": "Kids 10P Jiu-Jitsu & Kickboxing", "description": "Children burn energy, build confidence, and learn discipline in a structured, age-appropriate class. Non-violent, supervised, and adapted to each child's athletic level.", "audience": "Kids (ages 5+)"}
+        {"name": "Kids 10P Jiu-Jitsu & Kickboxing", "description": "Children burn energy, build confidence, and learn discipline in a structured, age-appropriate class. Non-violent, supervised, and adapted to each child's athletic level.", "audience": "Kids (ages 7+)"}
       ]
     },
     "jiuJitsu": {
