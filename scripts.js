@@ -167,6 +167,16 @@
 
         var programId = data.program || 'jiu-jitsu';
 
+        // Meta Pixel: fire Lead conversion (only after honeypot + min-time pass)
+        try {
+          if (typeof window.fbq === 'function') {
+            window.fbq('track', 'Lead', {
+              content_name: programId,
+              content_category: 'Free Trial Class'
+            });
+          }
+        } catch (err) { /* ignore */ }
+
         // Fire all GHL webhooks for this program in parallel. keepalive: true
         // ensures requests survive the redirect to booking.html below. We don't
         // await the responses — fire-and-forget so a slow GHL endpoint can't
